@@ -32,20 +32,20 @@ $this->assign('title',  'Homepage');
                     if($size > 3){
                         $tags = [$article->tags[0], $article->tags[1], $article->tags[2]];
                         foreach ($tags as $tag){
-                            echo '<td><div style="text-align: center; width: 60%; background: #d0bf98; font-size: 15px; border-radius: 12px; padding: 13px; color: white; margin-bottom: 15px;">' .$tag->name.'</div></td>';
+                            echo '<td><div style="text-align: center; width: 65%; background: #d0bf98; font-size: 15px; border-radius: 12px; padding: 13px; color: white; margin-bottom: 15px;">' .$tag->name.'</div></td>';
                         }
                     }
                     else{
                         if($size == 2){
                             foreach ($article->tags as $tag){
-                                echo '<td><div style="text-align: center; width: 60%; background: #d0bf98; font-size: 15px; border-radius: 12px; padding: 13px; color: white; margin-bottom: 15px;">' .$tag->name.'</div></td>';
+                                echo '<td><div style="text-align: center; width: 65%; background: #d0bf98; font-size: 15px; border-radius: 12px; padding: 13px; color: white; margin-bottom: 15px;">' .$tag->name.'</div></td>';
                             }
                             echo '<td></td>';
                         }
                         else{
                             if($size == 1){
                                 foreach ($article->tags as $tag){
-                                    echo '<td><div style="text-align: center; width: 60%; background: #d0bf98; font-size: 15px; border-radius: 12px; padding: 13px; color: white; margin-bottom: 15px;">' .$tag->name.'</div></td>';
+                                    echo '<td><div style="text-align: center; width: 65s%; background: #d0bf98; font-size: 15px; border-radius: 12px; padding: 13px; color: white; margin-bottom: 15px;">' .$tag->name.'</div></td>';
                                 }
                                 echo '<td></td><td></td>';
                             }

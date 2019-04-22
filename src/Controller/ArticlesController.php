@@ -14,6 +14,10 @@ use Cake\Utility\Text;
 class ArticlesController extends AppController
 {
 
+    public function root(){
+        $this->referer('/homepage');
+    }
+
     public function homepage(){
         $articles = $this->Articles
             ->find()
