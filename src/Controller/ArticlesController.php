@@ -15,7 +15,7 @@ class ArticlesController extends AppController
 {
 
     public function root(){
-        $this->referer('/homepage');
+        return $this->referer('/homepage');
     }
 
     public function homepage(){
